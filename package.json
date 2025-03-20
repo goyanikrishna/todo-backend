@@ -1,0 +1,50 @@
+{
+  "name": "demo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --ext ts --exec \"tsc && node dist/index.js\"",
+    "prestart": "tsc",
+    "start": "NODE_ENV=production node dist/index.js",
+    "render": "tsc && NODE_ENV=production node --max-old-space-size=8192 dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/method-override": "^3.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.10",
+    "bcrypt": "^5.1.1",
+    "compression": "^1.8.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validation": "^4.1.1",
+    "helmet": "^8.0.0",
+    "http-status": "^2.1.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.16",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.8.2"
+  }
+}
